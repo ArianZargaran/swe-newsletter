@@ -1,0 +1,146 @@
+# Newsletter Bot
+
+## Topic Tracker State
+
+Last sent: 2026-06-10
+
+### Covered topics
+- **web_development**: How HTTP Works
+
+---
+
+## Topic Lists
+
+### computer_science (Monday / Friday)
+1. Binary Numbers
+2. Boolean Logic
+3. Data Structures: Arrays and Linked Lists
+4. Data Structures: Stacks and Queues
+5. Data Structures: Hash Tables
+6. Data Structures: Trees
+7. Data Structures: Graphs
+8. Sorting Algorithms
+9. Search Algorithms
+10. Recursion
+11. Big O Notation
+12. Memory Management
+13. How CPUs Work
+14. Compilers vs Interpreters
+15. Operating Systems Basics
+16. Concurrency and Parallelism
+17. Networking Fundamentals
+18. Encryption Basics
+19. Databases: SQL vs NoSQL
+20. How the Internet Works
+
+### software_development (Tuesday)
+1. Version Control with Git
+2. Test-Driven Development
+3. Code Review Best Practices
+4. Continuous Integration and Continuous Delivery
+5. Agile and Scrum
+6. Design Patterns: Singleton and Factory
+7. Design Patterns: Observer and Strategy
+8. SOLID Principles
+9. Refactoring
+10. Technical Debt
+11. Documentation Best Practices
+12. Semantic Versioning
+13. Debugging Techniques
+14. Pair Programming
+15. The 12-Factor App
+
+### web_development (Wednesday)
+1. ~~How HTTP Works~~ ✓
+2. REST APIs
+3. HTML and the DOM
+4. CSS Box Model
+5. JavaScript Event Loop
+6. How Browsers Render Pages
+7. Web Cookies and Sessions
+8. HTTPS and TLS
+9. WebSockets
+10. Content Delivery Networks
+11. Progressive Web Apps
+12. Web Accessibility
+13. Cross-Origin Resource Sharing
+14. Frontend vs Backend vs Fullstack
+15. GraphQL vs REST
+
+### ai_engineering (Thursday)
+1. What is a Neural Network
+2. How Large Language Models Work
+3. Embeddings and Vector Search
+4. Retrieval-Augmented Generation
+5. Fine-Tuning vs Prompting
+6. Tokens and Context Windows
+7. Temperature and Sampling
+8. AI Agents and Tool Use
+9. Evaluation and Benchmarking
+10. Responsible AI and Bias
+11. Multimodal Models
+12. Reinforcement Learning from Human Feedback
+13. Model Quantization
+14. Prompt Injection and Security
+
+---
+
+## Daily Newsletter Workflow
+
+**Step 1 — Determine today's category**
+Check today's day of the week:
+- Monday / Friday → computer_science
+- Tuesday → software_development
+- Wednesday → web_development
+- Thursday → ai_engineering
+
+**Step 2 — Pick the topic**
+From the relevant topic list above, pick the first topic not struck through (✓).
+If every topic in the category is covered, remove all strikethroughs in that category and start from the top.
+
+**Step 3 — Write the newsletter**
+- Memorable title
+- 3–4 paragraphs, plain language (no assumed technical background)
+- Spell out every acronym on first use with short form in parentheses
+- Bold key terms
+- One-sentence takeaway at the end
+- 400–600 words, formatted as HTML
+
+Add a tweet box at the bottom:
+```html
+<div style="margin-top:32px;background:#000;border-radius:16px;padding:20px 24px;font-family:sans-serif;">
+  <div style="color:#71767b;font-size:13px;margin-bottom:8px;">𝕏 Share this insight</div>
+  <div style="color:#fff;font-size:15px;line-height:1.5;">[TWEET TEXT — max 240 chars, punchy standalone insight]</div>
+  <div style="margin-top:12px;color:#1d9bf0;font-size:13px;">[3–4 HASHTAGS]</div>
+</div>
+```
+
+Hashtag map:
+- computer_science → #CS #ComputerScience #TechEducation #LearnCS
+- software_development → #SoftwareDev #CleanCode #DevTips #Programming
+- web_development → #WebDev #Frontend #BuildForTheWeb #100DaysOfCode
+- ai_engineering → #AI #MachineLearning #LLMs #AIEngineering
+
+**Step 4 — Send it**
+Load `FROM_EMAIL` and `TO_EMAIL` from `.env`. Use `RESEND_API_KEY` from the environment.
+Using Python with urllib only, POST to https://api.resend.com/emails:
+- Authorization: Bearer $RESEND_API_KEY
+- from: $FROM_EMAIL
+- to: $TO_EMAIL
+- subject: the newsletter title
+- html: the full HTML newsletter
+
+Include `User-Agent: Mozilla/5.0 (compatible; newsletter-bot/1.0)` in the request headers.
+Print the response. If it fails, print the error and exit with code 1.
+
+**Step 5 — Update this file**
+After a successful send, update the "Topic Tracker State" section:
+- Set "Last sent" to today's date
+- Strike through the topic in its list and add ✓
+
+**Step 6 — Commit and push**
+```bash
+git add CLAUDE.md
+git commit -m "sent: <topic> (<date>)"
+git push -u origin main
+```
