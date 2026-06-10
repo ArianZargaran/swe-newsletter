@@ -122,7 +122,7 @@ Hashtag map:
 - ai_engineering → #AI #MachineLearning #LLMs #AIEngineering
 
 **Step 4 — Send it**
-Load `FROM_EMAIL` and `TO_EMAIL` from `.env`. Use `RESEND_API_KEY` from the environment.
+Load `FROM_EMAIL`, `TO_EMAIL`, and `RESEND_API_KEY` from environment variables.
 Using Python with urllib only, POST to https://api.resend.com/emails:
 - Authorization: Bearer $RESEND_API_KEY
 - from: $FROM_EMAIL
