@@ -5,7 +5,7 @@
 Last sent: 2026-06-10
 
 ### Covered topics
-- **web_development**: How HTTP Works
+- **web_development**: How HTTP Works, REST APIs
 
 ---
 
@@ -52,7 +52,7 @@ Last sent: 2026-06-10
 
 ### web_development (Wednesday)
 1. ~~How HTTP Works~~ ✓
-2. REST APIs
+2. ~~REST APIs~~ ✓
 3. HTML and the DOM
 4. CSS Box Model
 5. JavaScript Event Loop
