@@ -1,4 +1,4 @@
-# swe-newsletter
+# SWE Newsletter
 
 A self-running daily newsletter bot powered by Claude Code. Each day it picks the next software engineering topic, writes a 400–600 word plain-language newsletter, and emails it via [Resend](https://resend.com). Topic progress is tracked in `CLAUDE.md` and persisted back to this repo after every send.
 
