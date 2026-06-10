@@ -9,6 +9,15 @@ Last sent: 2026-06-10
 
 ---
 
+## Scheduled Topics
+
+Rows here take priority over the regular list order. Add a row to lock a specific topic to a specific date. The workflow removes the row after sending.
+
+| Date | Topic | Category |
+|------|-------|----------|
+
+---
+
 ## Topic Lists
 
 ### computer_science (Monday / Friday)
@@ -95,7 +104,8 @@ Check today's day of the week:
 - Thursday → ai_engineering
 
 **Step 2 — Pick the topic**
-From the relevant topic list above, pick the first topic not struck through (✓).
+First, check the "Scheduled Topics" table for a row whose date matches today and whose category matches today's category. If found, use that topic and delete the row from the table before continuing.
+Otherwise, from the relevant topic list above, pick the first topic not struck through (✓).
 If every topic in the category is covered, remove all strikethroughs in that category and start from the top.
 
 **Step 3 — Write the newsletter**
@@ -144,3 +154,24 @@ git add CLAUDE.md
 git commit -m "sent: <topic> (<date>)"
 git push -u origin main
 ```
+
+---
+
+## Forward Calendar
+
+When asked "what topics are coming up?" or "show the schedule", simulate the next N newsletter sends (default: 4 weeks ahead) and output a table.
+
+Algorithm:
+1. Start from tomorrow's date and walk forward day by day.
+2. Skip days with no category (Saturday, Sunday, and weekdays not in the map).
+3. For each send day, check "Scheduled Topics" for a pinned entry first.
+4. Otherwise simulate picking the next uncovered topic from the relevant list (track a local pointer per category — do not modify the actual lists).
+5. Stop after N send days.
+
+Output format:
+| Date | Day | Category | Topic |
+|------|-----|----------|-------|
+| YYYY-MM-DD | Wednesday | web_development | HTML and the DOM |
+| … | … | … | … |
+
+Note: this is a read-only preview — it does not update any state.
