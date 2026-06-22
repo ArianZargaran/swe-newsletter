@@ -5,7 +5,7 @@
 Last sent: 2026-06-22
 
 ### Covered topics
-- **computer_science**: Binary Numbers
+- **computer_science**: Binary Numbers, Boolean Logic
 - **web_development**: How HTTP Works, REST APIs
 
 ---
@@ -23,7 +23,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 
 ### computer_science (Monday / Friday)
 1. ~~Binary Numbers~~ ✓
-2. Boolean Logic
+2. ~~Boolean Logic~~ ✓
 3. Data Structures: Arrays and Linked Lists
 4. Data Structures: Stacks and Queues
 5. Data Structures: Hash Tables
