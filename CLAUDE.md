@@ -2,11 +2,11 @@
 
 ## Topic Tracker State
 
-Last sent: 2026-06-22
+Last sent: 2026-06-24
 
 ### Covered topics
 - **computer_science**: Binary Numbers, Boolean Logic
-- **web_development**: How HTTP Works, REST APIs
+- **web_development**: How HTTP Works, REST APIs, HTML and the DOM
 
 ---
 
@@ -63,7 +63,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 ### web_development (Wednesday)
 1. ~~How HTTP Works~~ ✓
 2. ~~REST APIs~~ ✓
-3. HTML and the DOM
+3. ~~HTML and the DOM~~ ✓
 4. CSS Box Model
 5. JavaScript Event Loop
 6. How Browsers Render Pages
