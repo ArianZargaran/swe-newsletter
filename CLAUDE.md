@@ -2,10 +2,10 @@
 
 ## Topic Tracker State
 
-Last sent: 2026-06-24
+Last sent: 2026-06-26
 
 ### Covered topics
-- **computer_science**: Binary Numbers, Boolean Logic
+- **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists
 - **web_development**: How HTTP Works, REST APIs, HTML and the DOM
 
 ---
@@ -24,7 +24,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 ### computer_science (Monday / Friday)
 1. ~~Binary Numbers~~ ✓
 2. ~~Boolean Logic~~ ✓
-3. Data Structures: Arrays and Linked Lists
+3. ~~Data Structures: Arrays and Linked Lists~~ ✓
 4. Data Structures: Stacks and Queues
 5. Data Structures: Hash Tables
 6. Data Structures: Trees
