@@ -2,11 +2,12 @@
 
 ## Topic Tracker State
 
-Last sent: 2026-06-24
+Last sent: 2026-07-02
 
 ### Covered topics
 - **computer_science**: Binary Numbers, Boolean Logic
 - **web_development**: How HTTP Works, REST APIs, HTML and the DOM
+- **ai_engineering**: What is a Neural Network
 
 ---
 
@@ -78,7 +79,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 15. GraphQL vs REST
 
 ### ai_engineering (Thursday)
-1. What is a Neural Network
+1. ~~What is a Neural Network~~ ✓
 2. How Large Language Models Work
 3. Embeddings and Vector Search
 4. Retrieval-Augmented Generation
