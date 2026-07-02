@@ -8,6 +8,7 @@ Last sent: 2026-07-13
 - **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists
 - **web_development**: How HTTP Works, REST APIs, HTML and the DOM, CSS Box Model
 - **software_development**: Version Control with Git
+- **ai_engineering**: What is a Neural Network
 
 ---
 
@@ -79,7 +80,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 15. GraphQL vs REST
 
 ### ai_engineering (Thursday)
-1. What is a Neural Network
+1. ~~What is a Neural Network~~ ✓
 2. How Large Language Models Work
 3. Embeddings and Vector Search
 4. Retrieval-Augmented Generation
