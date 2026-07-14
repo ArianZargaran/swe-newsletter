@@ -7,6 +7,7 @@ Last sent: 2026-07-13
 ### Covered topics
 - **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists
 - **web_development**: How HTTP Works, REST APIs, HTML and the DOM
+- **software_development**: Version Control with Git
 
 ---
 
@@ -44,7 +45,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 20. How the Internet Works
 
 ### software_development (Tuesday)
-1. Version Control with Git
+1. ~~Version Control with Git~~ ✓
 2. Test-Driven Development
 3. Code Review Best Practices
 4. Continuous Integration and Continuous Delivery
