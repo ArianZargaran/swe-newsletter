@@ -6,7 +6,7 @@ Last sent: 2026-07-13
 
 ### Covered topics
 - **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists
-- **web_development**: How HTTP Works, REST APIs, HTML and the DOM
+- **web_development**: How HTTP Works, REST APIs, HTML and the DOM, CSS Box Model
 - **software_development**: Version Control with Git
 
 ---
@@ -65,7 +65,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 1. ~~How HTTP Works~~ ✓
 2. ~~REST APIs~~ ✓
 3. ~~HTML and the DOM~~ ✓
-4. CSS Box Model
+4. ~~CSS Box Model~~ ✓
 5. JavaScript Event Loop
 6. How Browsers Render Pages
 7. Web Cookies and Sessions
