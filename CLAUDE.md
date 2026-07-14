@@ -161,9 +161,9 @@ git push -u origin main
 If the execution environment is configured to require a feature branch + pull request instead of a direct push to `main` (some sessions are), do this instead:
 1. Push the commit to that branch and open a pull request into `main`.
 2. Mark the pull request ready for review (not draft).
-3. Enable auto-merge on it.
+3. Merge it immediately (this repo has no required CI checks, so there is nothing to wait on — attempting to "enable auto-merge" will just error with "already in clean status"; call the merge endpoint directly instead).
 
-This repo has repository-level auto-merge turned on and no required CI checks, so an auto-merge-enabled PR lands on `main` within seconds — the tracker state stays current for the next run instead of sitting in an unmerged PR. Do not leave a tracker-update PR open in draft state; that's how the backlog from before got created.
+Do not leave a tracker-update PR open (draft or otherwise); that's how the backlog from before got created — a dozen sessions each read stale tracker state from an unmerged `main` and re-picked already-covered topics.
 
 ---
 
