@@ -2,11 +2,11 @@
 
 ## Topic Tracker State
 
-Last sent: 2026-07-14
+Last sent: 2026-07-15
 
 ### Covered topics
 - **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists
-- **web_development**: How HTTP Works, REST APIs, HTML and the DOM, CSS Box Model
+- **web_development**: How HTTP Works, REST APIs, HTML and the DOM, CSS Box Model, JavaScript Event Loop
 - **software_development**: Version Control with Git
 - **ai_engineering**: What is a Neural Network
 
@@ -67,7 +67,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 2. ~~REST APIs~~ ✓
 3. ~~HTML and the DOM~~ ✓
 4. ~~CSS Box Model~~ ✓
-5. JavaScript Event Loop
+5. ~~JavaScript Event Loop~~ ✓
 6. How Browsers Render Pages
 7. Web Cookies and Sessions
 8. HTTPS and TLS
