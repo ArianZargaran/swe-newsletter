@@ -2,13 +2,13 @@
 
 ## Topic Tracker State
 
-Last sent: 2026-07-15
+Last sent: 2026-07-16
 
 ### Covered topics
 - **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists
 - **web_development**: How HTTP Works, REST APIs, HTML and the DOM, CSS Box Model, JavaScript Event Loop
 - **software_development**: Version Control with Git
-- **ai_engineering**: What is a Neural Network
+- **ai_engineering**: What is a Neural Network, How Large Language Models Work
 
 ---
 
@@ -81,7 +81,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 
 ### ai_engineering (Thursday)
 1. ~~What is a Neural Network~~ ✓
-2. How Large Language Models Work
+2. ~~How Large Language Models Work~~ ✓
 3. Embeddings and Vector Search
 4. Retrieval-Augmented Generation
 5. Fine-Tuning vs Prompting
