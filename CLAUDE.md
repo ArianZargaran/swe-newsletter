@@ -2,10 +2,10 @@
 
 ## Topic Tracker State
 
-Last sent: 2026-07-17
+Last sent: 2026-07-20
 
 ### Covered topics
-- **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists, Data Structures: Stacks and Queues
+- **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists, Data Structures: Stacks and Queues, Data Structures: Hash Tables
 - **web_development**: How HTTP Works, REST APIs, HTML and the DOM, CSS Box Model, JavaScript Event Loop
 - **software_development**: Version Control with Git
 - **ai_engineering**: What is a Neural Network, How Large Language Models Work
@@ -28,7 +28,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 2. ~~Boolean Logic~~ ✓
 3. ~~Data Structures: Arrays and Linked Lists~~ ✓
 4. ~~Data Structures: Stacks and Queues~~ ✓
-5. Data Structures: Hash Tables
+5. ~~Data Structures: Hash Tables~~ ✓
 6. Data Structures: Trees
 7. Data Structures: Graphs
 8. Sorting Algorithms
