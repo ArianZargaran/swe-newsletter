@@ -2,12 +2,12 @@
 
 ## Topic Tracker State
 
-Last sent: 2026-07-20
+Last sent: 2026-07-21
 
 ### Covered topics
 - **computer_science**: Binary Numbers, Boolean Logic, Data Structures: Arrays and Linked Lists, Data Structures: Stacks and Queues, Data Structures: Hash Tables
 - **web_development**: How HTTP Works, REST APIs, HTML and the DOM, CSS Box Model, JavaScript Event Loop
-- **software_development**: Version Control with Git
+- **software_development**: Version Control with Git, Test-Driven Development
 - **ai_engineering**: What is a Neural Network, How Large Language Models Work
 
 ---
@@ -47,7 +47,7 @@ Rows here take priority over the regular list order. Add a row to lock a specifi
 
 ### software_development (Tuesday)
 1. ~~Version Control with Git~~ ✓
-2. Test-Driven Development
+2. ~~Test-Driven Development~~ ✓
 3. Code Review Best Practices
 4. Continuous Integration and Continuous Delivery
 5. Agile and Scrum
